@@ -1,0 +1,33 @@
+{
+  "short_name": "Lebenslinien",
+  "name": "Lebenslinien - Private personal timeline",
+  "description": "Keeping track of what happened when.",
+  "icons": [
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-142x142.png",
+      "sizes": "142x142",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "prefer_related_applications": false
+}
