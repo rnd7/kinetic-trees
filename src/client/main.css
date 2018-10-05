@@ -1,0 +1,180 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre,
+a, img, ol, ul, li, form, label, article, canvas, footer, header,
+menu, nav, button, input, textarea {
+  margin: 0;
+  padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+  font-weight: normal;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  background-color: #FFFFFF;
+  font-family: 'Crimson Text', serif;
+}
+
+button, input, h1, textarea {
+  padding: 6px;
+}
+
+button, input, textarea {
+  outline: none !important;
+}
+
+button {
+  min-width: 32px;
+  color: #FFF;
+  background-color: #336;
+}
+
+input, textarea {
+  color: #FFFFFF;
+  background-color: #444;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+h1 {
+  color: #FFFFFF;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.menu {
+  background: rgba(61,61,61,1);
+  background: rgba(33,33,33,1);
+  background: -moz-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(38,38,38,1) 34%, rgba(31,31,31,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(33,33,33,1)), color-stop(34%, rgba(38,38,38,1)), color-stop(100%, rgba(31,31,31,1)));
+  background: -webkit-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(38,38,38,1) 34%, rgba(31,31,31,1) 100%);
+  background: -o-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(38,38,38,1) 34%, rgba(31,31,31,1) 100%);
+  background: -ms-linear-gradient(top, rgba(33,33,33,1) 0%, rgba(38,38,38,1) 34%, rgba(31,31,31,1) 100%);
+  background: linear-gradient(to bottom, rgba(33,33,33,1) 0%, rgba(38,38,38,1) 34%, rgba(31,31,31,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#1f1f1f', GradientType=0 );
+  display: flex;
+  flex-flow: row;
+  max-width: 100%;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  z-index: 1000;
+}
+
+.menu > * {
+  margin-right: 2px;
+  user-select: none;
+ -moz-user-select: none;
+ -khtml-user-select: none;
+ -webkit-user-select: none;
+ -o-user-select: none;
+}
+
+.menu > *:last-child  {
+  margin-right: 0;
+}
+
+.menu > .spacer{
+  flex: 1;
+}
+
+#content {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #333;
+}
+
+#tree {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+#composite {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+#branches, #leafs{;
+  position: absolute;
+}
+
+
+/* Range input */
+
+#form > form {
+  margin: 32px;
+}
+
+
+#form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  animate: 0.4s;
+  background: #3071a9
+  border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 32px;
+  width: 32px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+
+}
+
+input[type="search"] {
+  padding-right: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  background: red;
+}

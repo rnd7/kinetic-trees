@@ -1,0 +1,15 @@
+{
+  "name": "lebenslinien",
+  "version": "1.0.0",
+  "description": "Private personal timeline util",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/index.js"
+  },
+  "author": "rnd7",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}
